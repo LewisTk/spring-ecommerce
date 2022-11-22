@@ -16,7 +16,7 @@ public class OrdenServiceImpl implements IOrdenService {
 	private IOrdenRepository ordenRepository;
 
 	@Override
-	public Orden sace(Orden orden) {
+	public Orden save(Orden orden) {
 		
 		return ordenRepository.save(orden);
 	}
@@ -58,5 +58,8 @@ public class OrdenServiceImpl implements IOrdenService {
 		
 		return numeroConcatenado;
 	}
+
+
+	
 
 }

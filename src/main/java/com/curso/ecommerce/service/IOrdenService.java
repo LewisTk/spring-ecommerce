@@ -5,9 +5,10 @@ import java.util.List;
 import com.curso.ecommerce.model.Orden;
 
 public interface IOrdenService {
-	
-	List<Orden> findAll();
-	Orden sace (Orden orden);
 
+	List<Orden> findAll();
+	Orden save (Orden orden);
+	String generarNumeroOrden();
+	
 }
 
