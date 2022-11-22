@@ -132,5 +132,12 @@ public class HomeController {
 		return "/usuario/carrito";
 	}
 	
+	//detallar la compra
+	@GetMapping("/order")
+	public String order() {
+		return "usuario/resumenorden";
+	}
+	
+	
 
 }
