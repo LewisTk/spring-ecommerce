@@ -50,7 +50,7 @@ public class UsuarioController {
 		logger.info("Accesos : {}", usuario);
 		
 		Optional<Usuario> user=usuarioService.findByEmail(usuario.getEmail());
-		logger.info("Usuario de db: {}", user.get());
+		//logger.info("Usuario de db: {}", user.get());
 		
 		if(user.isPresent()) {
 			session.setAttribute("idusuario", user.get().getId());
